@@ -1,9 +1,15 @@
 import React from 'react';
-import { render} from 'react-dom';
+import {render} from 'react-dom';
 
-import {FlippingCountdown} from "../../dist/bundle";
+import {FlippingClock, FlippingCountdown} from "../../dist/bundle";
 
 const App = () => (
-    <FlippingCountdown />
+    <React.Fragment>
+        Clock:
+        <FlippingClock/>
+        <hr />
+        Countdown:
+        <FlippingCountdown/>
+    </React.Fragment>
 );
-render(<App />, document.getElementById("root"));
+render(<App/>, document.getElementById("root"));

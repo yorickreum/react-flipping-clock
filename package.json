@@ -1,0 +1,24 @@
+{
+  "name": "react-flipping-clock",
+  "version": "1.0.0",
+  "description": "A simple flip clock for React, for example for a countdown.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "babel ./src --out-dir ./dist -s inline"
+  },
+  "author": "Yorick Reum",
+  "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
